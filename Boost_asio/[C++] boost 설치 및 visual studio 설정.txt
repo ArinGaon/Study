@@ -1,0 +1,18 @@
+[C++] boost 설치 및 visual studio 설정
+
+본 문서는 소스 코드를 이용해 boost 라이브러리를 빌드하고 비주얼 스튜디오와 연동하는 방법에 대해 다루고 있다.
+
+1. boost 다운로드 
+
+
+2. bootstrap.bat 실행
+	압축 해제 된 boost 디렉토리로 이동하여 bootstrap.bat를 실행한다. 파일 탐색기에서 마우스로 더블 클릭해도 되고 필자 처럼 PowerShell에서 커맨드로 실행해도 된다.
+
+3. b2.exe 실행
+
+4. 비주얼 스튜디오와 연동
+
+include : '프로젝트 속성 > 구성 속성 > C/C++ 일반 > 추가 포함 디렉터리'에 boost 헤더 디렉토리의 위치를 지정한다. 아래 예에서는 부스트를 다운로드하고 빌드한 "C:\Users\Administrator\Downloads\boost_1_76_0" 디렉토리를 지정한다.
+
+boost include path
+lib : '프로젝트 속성 > 구성 속성 > 링커 > 일반 > 추가 라이브러리 디렉터리'에 boost 라이브러리 디렉토리의 위치를 지정한다. 아래 예에서는 부스트를 다운로드하고 빌드한 "C:\Users\Administrator\Downloads\boost_1_76_0\stage\lib" 디렉토리를 지정한다
